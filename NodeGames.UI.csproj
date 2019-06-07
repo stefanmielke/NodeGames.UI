@@ -2,10 +2,13 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
+    <Authors>Stefan Mielke</Authors>
+    <PackageProjectUrl>https://github.com/stefanmielke/NodeGames.UI</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/stefanmielke/NodeGames.UI</RepositoryUrl>
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\NodeGames.Core\NodeGames.Core.csproj" />
+    <PackageReference Include="NodeGames.Core" Version="1.0.5" />
   </ItemGroup>
 
 </Project>

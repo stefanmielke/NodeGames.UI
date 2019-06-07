@@ -1,0 +1,6 @@
+language: csharp
+mono: none
+dotnet: 2.1.502
+script:
+ - dotnet pack -c Release -o . -p:PackageVersion=1.0.$TRAVIS_BUILD_NUMBER
+ - dotnet nuget push NodeGames.UI.1.0.$TRAVIS_BUILD_NUMBER.nupkg -k $nuget_key -s https://api.nuget.org/v3/index.json
